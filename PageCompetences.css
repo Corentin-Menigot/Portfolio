@@ -1,0 +1,24 @@
+header>nav>ul>li:nth-child(3)>a {
+    color: var(--colorLinkActive);
+}
+
+main {
+    flex-direction: column;
+}
+
+h1 {
+    font-size: larger;
+}
+
+div {
+    width: 75%;
+    align-self: center;
+}
+
+div>p {
+    background-color: var(--colorP);
+    border-radius: 20px;
+    border: 2px solid var(--colorBorder2);
+    min-height: 100px;
+    padding: 7px;
+}

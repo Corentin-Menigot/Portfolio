@@ -1,0 +1,57 @@
+header>nav>ul>li:nth-child(1)>a {
+    color: var(--colorLinkActive);
+}
+
+main {
+    flex-direction: column;
+}
+
+div {
+    align-self: center;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+div>img {
+    border: 2px solid var(--colorBorder2);
+    width: 225px;
+    height: 271px;
+    object-fit: cover;
+    margin: 3px;
+
+}
+
+section {
+    background-color: var(--colorP);
+    border-radius: 20px;
+    border: 2px solid var(--colorBorder2);
+    height: 261px;
+    width: 70%;
+    min-width: 150px;
+    padding: 7px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+div>section>p {
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+section>a {
+    margin-top: auto;
+}
+
+.imgGauche {
+    flex-wrap: wrap-reverse;
+}

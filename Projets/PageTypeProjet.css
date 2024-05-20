@@ -1,0 +1,31 @@
+header>nav>ul>li:nth-child(2)>a {
+    color: var(--colorLinkActive);
+}
+
+main {
+    align-items: center;
+    flex-direction: column;
+}
+
+main>p {
+    background-color: var(--colorP);
+    width: 55%;
+    border-radius: 20px;
+    border: 2px solid var(--colorBorder2);
+    padding: 7px;
+}
+
+main>div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    justify-content: center;
+}
+
+main>div>img {
+    border: 2px solid var(--colorBorder2);
+    object-fit: cover;
+    margin: 3px;
+    width: 300px;
+    height: 250px;
+}

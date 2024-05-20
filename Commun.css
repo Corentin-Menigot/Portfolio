@@ -1,0 +1,52 @@
+:root {
+    --backgroundColor: rgb(159, 235, 209);
+    --color1: rgb(8, 56, 8);
+    --colorBorder: rgb(5, 39, 5);
+    --colorBorder2: yellow;
+    --colorLink: rgb(8, 108, 155);
+    --colorLinkHover: rgb(9, 84, 119);
+    --colorLinkActive: black;
+    --colorP: brown;
+    --colorLinkHeader: rgb(82, 173, 209);
+    --colorLinkHeaderHover: rgb(89, 190, 230);
+    --colorButton: pink;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    border-radius: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+hr {
+    border: 6px solid var(--colorBorder);
+    border-radius: 15px;
+    width: 65%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--colorLink);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--colorLinkHover);
+}
+

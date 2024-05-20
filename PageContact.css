@@ -1,0 +1,83 @@
+header>nav>ul>li:nth-child(5)>a {
+    color: var(--colorLinkActive);
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 50px;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main>form>div {
+    padding: 7px;
+    width: 45%;
+    height: 650px;
+    min-width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--colorP);
+    border-radius: 20px;
+    border: 2px solid var(--colorBorder2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+    padding: 7px;
+    border: 2px solid var(--colorBorder2);
+}
+
+.formulaire {
+    align-self: center;
+    width: 81%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 14px;
+    padding: 0;
+    border-radius: 7px;
+    border: 2px solid var(--colorBorder2);
+    padding: 7px;
+}
+
+.input1 {
+    width: 35%;
+}
+
+.input2 {
+    width: 81%;
+}
+
+.submit {
+    width: 150px;
+    height: 32px;
+    background-color: var(--colorButton);
+}
+
+.objet {
+    width: 81%;
+    height: 54px;
+    border-radius: 10px;
+}
+
+.message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 650px;
+    width: 45%;
+    min-width: 500px;
+    border-radius: 20px;
+}
