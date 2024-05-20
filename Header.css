@@ -27,6 +27,7 @@ header>nav>ul {
 
 header>nav>ul>li {
     border-radius: 20px;
+    border: 1px solid var(--colorBorder);
     width: 205px;
     margin: 0;
     margin: 6px;
