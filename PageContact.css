@@ -64,7 +64,7 @@ input {
 .submit {
     width: 150px;
     height: 32px;
-    background-color: var(--colorButton);
+    background-color: var(--color1);
 }
 
 .objet {
