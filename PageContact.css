@@ -40,13 +40,13 @@ textarea {
 
 .formulaire {
     align-self: center;
+    box-sizing: border-box;
     width: 81%;
     display: flex;
     justify-content: space-between;
 }
 
 input {
-    height: 14px;
     padding: 0;
     border-radius: 7px;
     border: 2px solid var(--colorBorder2);
@@ -54,10 +54,13 @@ input {
 }
 
 .input1 {
+    height: 14px;
     width: 35%;
 }
 
 .input2 {
+    box-sizing: border-box;
+    height: 32px;
     width: 81%;
 }
 
