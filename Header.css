@@ -26,7 +26,6 @@ header>nav>ul {
 }
 
 header>nav>ul>li {
-    width: 207px;
     margin: 0;
     margin: 6px;
     display: flex;
@@ -38,7 +37,7 @@ header>nav>ul>li>a {
     border: 1px solid var(--colorBorder);
     background-color: var(--colorLinkHeader);
     text-align: center;
-    width: 207px;
+    width: 220px;
     padding: 9px;
     border-radius: 20px;
 }

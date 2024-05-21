@@ -26,12 +26,27 @@
             <form>
                 <div class="div">
                     <div class="formulaire">
-                        <input type="text" id="name" name="name" maxlength="25" placeholder="Nom" class="input1">
-                        <input type="text" id="first_name" name="first_name" maxlength="25" placeholder="Prénom" class="input1">
+                        <div class="divInput1">
+                            <label for="name">Nom:</label><br>
+                            <input type="text" id="name" name="name" maxlength="25" placeholder="Votre nom" class="input1">
+                        </div>
+                        <div class="divInput1">
+                            <label for="first_name">Prénom:</label><br>
+                            <input type="text" id="first_name" name="first_name" maxlength="25" placeholder="Votre prénom" class="input1">
+                        </div>
                     </div>
-                    <input type="email" id="mail" name="mail" placeholder="Adresse Email"  class="input2">
-                    <input type="tel" id="Numéro de téléphone" name="phone_number" placeholder="Numéro de téléphone" minlength="10" maxlength="10"  class="input2">
-                    <textarea id="object" type="textarea" name="object" placeholder="Objet" class="objet"></textarea>
+                    <div class="divInput2">
+                        <label for="mail">Adresse mail:</label><br>
+                        <input type="email" id="mail" name="mail" placeholder="Votre adresse Email"  class="input2">
+                    </div>
+                    <div class="divInput2">
+                        <label for="phone_number">Numéro de téléphone:</label><br>
+                        <input type="tel" id="phone_number" name="phone_number" placeholder="Votre numéro de téléphone" minlength="10" maxlength="10"  class="input2">
+                    </div>
+                    <div class="divInput2">
+                        <label for="object">Objet:</label><br>
+                        <textarea id="object" type="textarea" name="object" placeholder="Objet du message" class="objet"></textarea>
+                    </div>
                     <input type="submit" value="Envoyer" class="submit">
                 </div>
                 <textarea class="message" id="message" type="textarea" name="message" placeholder="Votre message"></textarea>
