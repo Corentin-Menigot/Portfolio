@@ -75,7 +75,7 @@ input {
 
 .submit {
     width: 150px;
-    background-color: var(--color1);
+    background-color: var(--colorBackgroundElement);
     color: white;
 }
 
