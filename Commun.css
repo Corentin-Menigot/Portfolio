@@ -1,18 +1,18 @@
 :root {
-    --backgroundColor: rgb(115, 209, 176);
-    --color1: rgb(34, 70, 100);
+    --colorBackground: rgb(115, 209, 176);
+    --colorBackgroundElement: rgb(34, 70, 100);
     --colorBorder: rgb(22, 47, 68);
-    --colorBorder2: rgb(12, 82, 64);
+    --colorBorder2: rgb(27, 124, 76);
+    --colorP: rgb(164, 190, 240);
     --colorLink: rgb(102, 0, 236);
     --colorLinkHover: rgb(9, 84, 119);
     --colorLinkActive: black;
-    --colorP: rgb(164, 190, 240);
     --colorLinkHeader: rgb(164, 190, 240);
     --colorLinkHeaderHover: rgb(138, 166, 219);
 }
 
 body {
-    background-color: var(--backgroundColor);
+    background-color: var(--colorBackground);
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ hr {
     border-radius: 15px;
     height: 5px;
     width: 65%;
-    background-color: var(--color1);
+    background-color: var(--colorBackgroundElement);
     margin-top: 10px;
     margin-bottom: 10px;
 }
