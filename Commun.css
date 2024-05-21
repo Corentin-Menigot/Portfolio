@@ -1,14 +1,14 @@
 :root {
-    --backgroundColor: rgb(159, 235, 209);
-    --color1: rgb(8, 56, 8);
-    --colorBorder: rgb(5, 39, 5);
-    --colorBorder2: yellow;
-    --colorLink: rgb(8, 108, 155);
+    --backgroundColor: rgb(115, 209, 176);
+    --color1: rgb(34, 70, 100);
+    --colorBorder: rgb(22, 47, 68);
+    --colorBorder2: rgb(12, 82, 64);
+    --colorLink: rgb(102, 0, 236);
     --colorLinkHover: rgb(9, 84, 119);
     --colorLinkActive: black;
-    --colorP: brown;
-    --colorLinkHeader: rgb(82, 173, 209);
-    --colorLinkHeaderHover: rgb(89, 190, 230);
+    --colorP: rgb(164, 190, 240);
+    --colorLinkHeader: rgb(164, 190, 240);
+    --colorLinkHeaderHover: rgb(128, 172, 189);
     --colorButton: pink;
 }
 
@@ -34,9 +34,11 @@ main {
 }
 
 hr {
-    border: 6px solid var(--colorBorder);
+    border: 2px solid var(--colorBorder);
     border-radius: 15px;
+    height: 5px;
     width: 65%;
+    background-color: var(--color1);
     margin-top: 10px;
     margin-bottom: 10px;
 }
