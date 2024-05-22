@@ -37,7 +37,7 @@ header>nav>ul>li>a {
     border: 1px solid var(--colorBorder);
     background-color: var(--colorLinkHeader);
     text-align: center;
-    width: 220px;
+    width: 160px;
     padding: 9px;
     border-radius: 14px;
     color: var(--colorBorder);
