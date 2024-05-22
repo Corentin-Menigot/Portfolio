@@ -10,13 +10,18 @@
     --colorLinkHeaderHover: rgb(114, 142, 194);
 }
 
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Medium.ttf);
+}
+
 body {
     background-image: linear-gradient(to bottom right, rgb(112, 118, 212), rgb(51, 85, 177));
     margin: 0px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: poppins;
 }
 
 img {
