@@ -50,6 +50,11 @@ section>a {
     margin-top: auto;
 }
 
+h1 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
 .imgGauche {
     flex-wrap: wrap-reverse;
 }

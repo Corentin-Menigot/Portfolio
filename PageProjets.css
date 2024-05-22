@@ -38,6 +38,7 @@ section {
     margin: 3px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 div>section>p {
@@ -51,7 +52,8 @@ section>a {
 }
 
 h1 {
-    margin: none;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 .imgGauche {

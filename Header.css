@@ -40,7 +40,7 @@ header>nav>ul>li>a {
     width: 220px;
     padding: 9px;
     border-radius: 14px;
-    color: var(--colorLinkHeaderText);
+    color: var(--colorBorder);
 }
 
 header>nav>ul>li>a:hover {
