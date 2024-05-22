@@ -19,7 +19,7 @@ div {
 
 div>img {
     box-sizing: border-box;
-    border: 2px solid var(--colorBorder2);
+    border: 2px solid var(--colorBorder);
     width: 235px;
     height: 275px;
     object-fit: cover;
@@ -30,7 +30,7 @@ section {
     box-sizing: border-box;
     background-color: var(--colorP);
     border-radius: 20px;
-    border: 2px solid var(--colorBorder2);
+    border: 2px solid var(--colorBorder);
     height: 275px;
     width: 45%;
     min-width: 235px;

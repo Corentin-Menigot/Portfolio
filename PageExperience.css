@@ -18,7 +18,7 @@ div {
 div>p {
     background-color: var(--colorP);
     border-radius: 20px;
-    border: 2px solid var(--colorBorder2);
+    border: 2px solid var(--colorBorder);
     min-height: 100px;
     padding: 7px;
 }

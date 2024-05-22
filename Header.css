@@ -45,4 +45,5 @@ header>nav>ul>li>a {
 
 header>nav>ul>li>a:hover {
     background-color: var(--colorLinkHeaderHover);
+    color: var(--colorBorder);
 }

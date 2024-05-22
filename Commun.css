@@ -2,22 +2,21 @@
     --colorBackground: rgb(115, 209, 176);
     --colorBackgroundElement: rgb(34, 70, 100);
     --colorBorder: rgb(22, 47, 68);
-    --colorBorder2: rgb(27, 124, 76);
-    --colorP: rgb(164, 190, 240);
+    --colorP: rgb(143, 178, 241);
     --colorLink: rgb(99, 32, 223);
     --colorLinkHover: rgb(14, 96, 134);
     --colorLinkActive: black;
-    --colorLinkHeader: rgb(164, 190, 240);
+    --colorLinkHeader: var(--colorP);
     --colorLinkHeaderHover: rgb(114, 142, 194);
 }
 
 body {
-    background-image: linear-gradient(to bottom right, rgb(110, 139, 167), rgb(66, 66, 155));
+    background-image: linear-gradient(to bottom right, rgb(112, 118, 212), rgb(51, 85, 177));
     margin: 0px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 img {
