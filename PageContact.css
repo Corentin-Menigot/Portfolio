@@ -1,5 +1,5 @@
 header>nav>ul>li:nth-child(5)>a {
-    color: var(--colorLinkActive);
+    background-color: var(--colorLinkHeaderHover);
 }
 
 main {
@@ -20,7 +20,7 @@ main>form>div {
     padding: 7px;
     width: 45%;
     height: 650px;
-    min-width: 500px;
+    min-width: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: var(--colorP);
@@ -91,6 +91,6 @@ input {
     margin-bottom: 10px;
     height: 650px;
     width: 45%;
-    min-width: 500px;
+    min-width: 400px;
     border-radius: 20px;
 }

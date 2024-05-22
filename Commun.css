@@ -9,6 +9,7 @@
     --colorLinkActive: black;
     --colorLinkHeader: rgb(164, 190, 240);
     --colorLinkHeaderHover: rgb(138, 166, 219);
+    --colorLinkHeaderText: rgb(14, 96, 134);
 }
 
 body {
@@ -36,7 +37,7 @@ main {
 hr {
     border: 2px solid var(--colorBorder);
     border-radius: 15px;
-    height: 5px;
+    height: 8px;
     width: 65%;
     background-color: var(--colorBackgroundElement);
     margin-top: 10px;

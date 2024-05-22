@@ -11,7 +11,7 @@ header {
     justify-content: space-evenly;
     display: flex;
     position: sticky;
-    border-radius: 30px;
+    border-radius: 22px;
     top: 10px;
     left: 0;
     right: 0;
@@ -39,7 +39,8 @@ header>nav>ul>li>a {
     text-align: center;
     width: 220px;
     padding: 9px;
-    border-radius: 20px;
+    border-radius: 14px;
+    color: var(--colorLinkHeaderText);
 }
 
 header>nav>ul>li>a:hover {
