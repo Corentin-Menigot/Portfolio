@@ -11,7 +11,7 @@ main>p {
     background-color: var(--colorP);
     width: 55%;
     border-radius: 20px;
-    border: 2px solid var(--colorBorder);
+    border: 1px solid var(--colorBorder);
     padding: 7px;
 }
 
@@ -23,7 +23,7 @@ main>div {
 }
 
 main>div>img {
-    border: 2px solid var(--colorBorder);
+    border: 1px solid var(--colorBorder);
     object-fit: cover;
     margin: 3px;
     width: 300px;

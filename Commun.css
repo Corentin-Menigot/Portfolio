@@ -1,8 +1,8 @@
 :root {
     --colorBackground: rgb(115, 209, 176);
     --colorBackgroundElement: rgb(34, 70, 100);
-    --colorBorder: rgb(22, 47, 68);
-    --colorP: rgb(143, 178, 241);
+    --colorBorder: rgb(15, 31, 44);
+    --colorP: rgb(143, 178, 241, 0.7);
     --colorLink: rgb(99, 32, 223);
     --colorLinkHover: rgb(14, 96, 134);
     --colorLinkActive: black;
@@ -16,7 +16,9 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, rgb(112, 118, 212), rgb(51, 85, 177));
+    background-attachment: fixed;
+    background-image: url(Images/FondPage.jpg);
+    background-size: cover;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -38,7 +40,7 @@ main {
 }
 
 hr {
-    border: 2px solid var(--colorBorder);
+    border: 1px solid var(--colorBorder);
     border-radius: 15px;
     height: 8px;
     width: 65%;

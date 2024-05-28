@@ -1,5 +1,5 @@
 header {
-    border: 3px solid var(--colorBorder);
+    border: 1px solid var(--colorBorder);
     background-color: var(--colorBackgroundElement);
     margin-top: 10px;
     margin-bottom: 10px;
