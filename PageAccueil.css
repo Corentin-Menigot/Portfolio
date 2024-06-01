@@ -6,6 +6,11 @@ main {
     flex-direction: column;
 }
 
+.titrePortefolio {
+    align-self: center;
+    font-size: 1.2cm;
+}
+
 div {
     align-self: center;
     width: 70%;
@@ -24,6 +29,7 @@ div>img {
     height: 275px;
     object-fit: cover;
     margin: 3px;
+    align-self: center;
 }
 
 section {
@@ -31,7 +37,7 @@ section {
     background-color: var(--colorP);
     border-radius: 20px;
     border: 1px solid var(--colorBorder);
-    height: 275px;
+    min-height: 275px;
     width: 45%;
     min-width: 235px;
     padding: 7px;
