@@ -30,13 +30,20 @@ main>div {
     justify-content: center;
 }
 
-main>div>section>img {
+main>div>section>a>img {
     border: 1px solid var(--colorBorder);
     object-fit: cover;
     margin: 3px;
     height: 250px;
+    max-width: 400px;
 }
 
 h4 {
     margin: 0;
+    color: white;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
 }
