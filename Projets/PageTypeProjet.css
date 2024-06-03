@@ -47,3 +47,7 @@ h4 {
     display: flex;
     justify-content: space-evenly;
 }
+
+.longParagraphe {
+    text-indent: 40px;
+}
