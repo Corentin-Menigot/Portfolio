@@ -25,8 +25,8 @@ div {
 div>img {
     box-sizing: border-box;
     border: 1px solid var(--colorBorder);
-    width: 235px;
-    height: 275px;
+    width: 240px;
+    height: 285px;
     object-fit: cover;
     margin: 3px;
     align-self: center;
@@ -37,7 +37,7 @@ section {
     background-color: var(--colorP);
     border-radius: 20px;
     border: 1px solid var(--colorBorder);
-    min-height: 275px;
+    min-height: 285px;
     width: 45%;
     min-width: 235px;
     padding: 7px;
@@ -50,6 +50,7 @@ div>section>p {
     margin: 0;
     margin-left: 5px;
     margin-right: 5px;
+    text-indent: 30px;
 }
 
 section>a {
