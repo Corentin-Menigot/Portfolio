@@ -1,13 +1,13 @@
 :root {
     --colorBackground: rgb(115, 209, 176);
-    --colorBackgroundElement: rgb(34, 70, 100);
-    --colorBorder: rgb(15, 31, 44);
-    --colorP: rgb(143, 178, 241, 0.7);
+    --colorBackgroundElement: rgb(142, 7, 204);
+    --colorBorder: rgb(0, 0, 0);
+    --colorP: rgba(148, 16, 224, 0.85);
     --colorLink: rgb(99, 32, 223);
     --colorLinkHover: rgb(14, 96, 134);
     --colorLinkActive: black;
     --colorLinkHeader: var(--colorP);
-    --colorLinkHeaderHover: rgb(81, 112, 170);
+    --colorLinkHeaderHover: rgb(61, 94, 72);
 }
 
 @font-face {
@@ -17,7 +17,7 @@
 
 body {
     background-attachment: fixed;
-    background-image: url(Images/background.jpg);
+    background-color: rgb(41, 40, 40);
     background-size: cover;
     margin: 0px;
     display: flex;

@@ -9,6 +9,7 @@ main {
 .titrePortefolio {
     align-self: center;
     font-size: 1.2cm;
+    text-align: center;
 }
 
 div {
@@ -36,7 +37,7 @@ section {
     box-sizing: border-box;
     background-color: var(--colorP);
     border-radius: 20px;
-    border: 1px solid var(--colorBorder);
+    border: 0px solid var(--colorBorder);
     min-height: 285px;
     width: 45%;
     min-width: 235px;

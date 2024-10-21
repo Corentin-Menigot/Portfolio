@@ -1,5 +1,5 @@
 header {
-    border: 1px solid var(--colorBorder);
+    border: 0px solid var(--colorBorder);
     background-color: var(--colorBackgroundElement);
     margin-top: 10px;
     margin-bottom: 10px;
@@ -16,6 +16,7 @@ header {
     left: 0;
     right: 0;
     font-size: large;
+    box-shadow: 2px 2px 2px 1.5px rgb(233, 199, 126); 
 }
 
 header>nav>ul {
@@ -35,7 +36,7 @@ header>nav>ul>li {
 }
 
 header>nav>ul>li>a {
-    border: 1px solid var(--colorBorder);
+    border: 0px solid var(--colorBorder);
     background-color: var(--colorLinkHeader);
     text-align: center;
     width: 160px;
