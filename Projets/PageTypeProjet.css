@@ -14,10 +14,10 @@ section {
 }
 
 main>article {
-    background-color: var(--colorP);
+    background-color: var(--colorMainBackground);
     width: 55%;
     border-radius: 20px;
-    border: 1px solid var(--colorBorder);
+    border: 2px solid var(--colorBorder);
     padding: 7px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -43,7 +43,7 @@ h4 {
     color: black;
 }
 
-.images {
+.imagesProjet {
     display: flex;
     flex-direction: column;
     width: 55%;
@@ -60,5 +60,6 @@ h4 {
     box-sizing: border-box;
     margin-top: 5px;
     width: 100%;
-    border: 1px solid var(--colorBorder);
+    border-radius: 20px;
+    border: 2px solid var(--colorBorder);
 }

@@ -1,6 +1,12 @@
+:root {
+    --colorTextHeader: rgb(0, 0, 0);
+    --colorTextHeaderHover: rgb(0, 0, 0);
+    --colorLinkHeader: rgb(100, 187, 129, 0.65);
+    --colorLinkHeaderHover: rgb(68, 114, 83);
+}
+
 header {
-    border: 0px solid var(--colorBorder);
-    background-color: var(--colorBackgroundElement);
+    border: 2px solid var(--colorBorder);
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
@@ -11,12 +17,12 @@ header {
     justify-content: space-evenly;
     display: flex;
     position: sticky;
-    border-radius: 22px;
+    border-radius: 10px;
     top: 10px;
     left: 0;
     right: 0;
     font-size: large;
-    box-shadow: 2px 2px 2px 1.5px rgb(233, 199, 126); 
+    backdrop-filter: blur(15px);
 }
 
 header>nav>ul {
@@ -28,24 +34,24 @@ header>nav>ul {
 }
 
 header>nav>ul>li {
-    margin: 0;
-    margin: 6px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     flex-grow: 1;
 }
 
 header>nav>ul>li>a {
-    border: 0px solid var(--colorBorder);
+    border: 2px solid var(--colorBorder);
     background-color: var(--colorLinkHeader);
     text-align: center;
     width: 160px;
     padding: 9px;
-    border-radius: 14px;
-    color: var(--colorBorder);
+    border-radius: 10px;
+    color: var(--colorTextHeader);
+    backdrop-filter: blur(25px);
 }
 
 header>nav>ul>li>a:hover {
     background-color: var(--colorLinkHeaderHover);
-    color: var(--colorBorder);
+    color: var(--colorTextHeaderHover);
 }

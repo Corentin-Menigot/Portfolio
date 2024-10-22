@@ -1,4 +1,4 @@
-header>nav>ul>li:nth-child(4)>a {
+header>nav>ul>li:nth-child(3)>a {
     background-color: var(--colorLinkHeaderHover);
 }
 
@@ -16,14 +16,14 @@ form {
     flex-wrap: wrap;
 }
 
-main>form>div {
+.contactDiv {
     padding: 7px;
     width: 45%;
     height: 650px;
     min-width: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: var(--colorP);
+    background-color: var(--colorMainBackground);
     border-radius: 20px;
     border: 1px solid var(--colorBorder);
     display: flex;
