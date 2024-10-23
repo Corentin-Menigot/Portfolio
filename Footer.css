@@ -1,5 +1,5 @@
 footer {
-    border-top: 0px solid var(--colorBorder);
+    border-top: 2px solid var(--colorBorder);
     background-color: var(--colorMainBackground);
     display: flex;
     padding-top: 15px;
@@ -41,3 +41,9 @@ footer>p {
     border: none;
     border-radius: 25%;
 }
+
+.icones:hover {
+    transform: scale(1.03);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1),
+    -4px -4px 4px rgb(18, 125, 224, 0.1);
+  }
