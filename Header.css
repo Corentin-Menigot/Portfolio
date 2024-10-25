@@ -1,12 +1,10 @@
 :root {
-    --colorTextHeader: rgb(0, 0, 0);
-    --colorTextHeaderHover: rgb(0, 0, 0);
-    --colorLinkHeader: rgb(100, 187, 129, 0.65);
-    --colorLinkHeaderHover: rgb(68, 114, 83);
+    --colorHeader: var(--colorBorder);
+    --colorLinkHeaderHover: rgb(7, 134, 56);
 }
 
 header {
-    border: 2px solid var(--colorBorder);
+    border: 2px solid var(--colorHeader);
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
@@ -42,18 +40,18 @@ header>nav>ul>li {
 }
 
 .buttonHeader {
-    border: 0px solid var(--colorBorder);
-    background-color: var(--colorBorder);
+    border: 0px solid var(--colorHeader);
+    background-color: var(--colorHeader);
     text-align: center;
     width: 160px;
     padding: 9px;
     border-radius: 10px;
-    color: var(--colorTextHeader);
+    color: black;
     backdrop-filter: blur(25px);
 }
 
 .buttonHeader:hover {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
-    -5px -5px 5px rgb(18, 125, 224, 0.1);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1) inset,
+    -7px -7px 7px rgba(2, 128, 86, 0.2) inset;
     color: var(--colorLinkHeaderHover);
 }

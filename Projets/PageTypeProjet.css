@@ -1,5 +1,5 @@
-header>nav>ul>li:nth-child(2)>a {
-    background-color: var(--colorLinkHeaderHover);
+li:has(a):nth-child(2)>a {
+    color: var(--colorLinkHeaderHover)
 }
 
 main {

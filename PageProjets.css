@@ -1,17 +1,17 @@
-header>nav>ul>li:nth-child(2)>a {
-    background-color: var(--colorLinkHeaderHover);
+li:has(a):nth-child(2)>a {
+    color: var(--colorLinkHeaderHover)
 }
 
 main {
     flex-direction: column;
 }
 
-div>img {
+.images {
     width: 235px;
     height: 235px;
 }
 
-section {
+.t {
     min-height: 235px;
     min-width: 235px;
     flex-direction: column;
@@ -35,4 +35,68 @@ h1 {
 
 .imgGauche {
     flex-wrap: wrap-reverse;
+}
+
+
+
+/* projets */
+.paragrapheProjet {
+    flex-direction: column;
+    margin: 5px 0 5px 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.longParagraphe {
+    text-indent: 30px;
+}
+
+
+/* Css pour les popups */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    backdrop-filter: blur(2px);
+    border: none;
+    scrollbar-width: none;
+    justify-content: center;
+    overflow: auto;
+}
+
+.popup .wrapper {
+    box-sizing: border-box;
+    margin: auto;
+    width: 55%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    width: 80%;
+}
+
+.openPopup {
+    background: none;
+    border: none;
+    width: 200px;
+}
+
+.closePopup {
+    border: none;
+    position: sticky;
+    background: none;
+    cursor: pointer;
+    font-size: 30px;
+    top: 0;
+    left: 97.5%;
 }

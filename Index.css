@@ -1,5 +1,5 @@
-header>nav>ul>li:nth-child(1)>a {
-    background-color: var(--colorLinkHeaderHover);
+li:has(a):nth-child(1)>a {
+    color: var(--colorLinkHeaderHover)
 }
 
 main {
@@ -12,7 +12,7 @@ main {
     text-align: center;
 }
 
-div>img {
+.images {
     width: 240px;
     height: 285px;
 }
@@ -36,6 +36,10 @@ section>a {
 h1 {
     margin: 0;
     margin-bottom: 5px;
+    /*dégradé stylé
+    background: linear-gradient(to right, red, blue);
+    background-clip: text;
+    color: transparent;*/
 }
 
 .imgGauche {
