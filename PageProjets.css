@@ -40,11 +40,16 @@ h1 {
 
 
 /* projets */
+h1 {
+    text-align: center;
+    width: 80%;
+}
+
 .paragrapheProjet {
     flex-direction: column;
     margin: 5px 0 5px 0;
     width: 100%;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
 }
 
 .longParagraphe {
@@ -63,26 +68,22 @@ h1 {
     height: 100%;
     width: 100%;
     background: none;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     border: none;
     scrollbar-width: none;
     justify-content: center;
     overflow: auto;
+    overscroll-behavior: contain;
 }
 
 .popup .wrapper {
     box-sizing: border-box;
     margin: auto;
-    width: 55%;
+    width: 50%;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     position: relative;
-}
-
-h1 {
-    text-align: center;
-    width: 80%;
 }
 
 .openPopup {
