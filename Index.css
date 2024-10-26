@@ -1,6 +1,4 @@
-li:has(a):nth-child(1)>a {
-    color: var(--colorLinkHeaderHover)
-}
+
 
 main {
     flex-direction: column;
@@ -18,7 +16,6 @@ main {
 }
 
 section {
-
     flex-direction: column;
 }
 

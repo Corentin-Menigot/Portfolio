@@ -1,7 +1,3 @@
-li:has(a):nth-child(3)>a {
-    color: var(--colorLinkHeaderHover)
-}
-
 main {
     justify-content: center;
     align-items: center;
