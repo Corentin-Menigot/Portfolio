@@ -4,6 +4,7 @@
     --colorLink: rgb(36, 174, 209);
     --colorLinkHover: rgb(14, 96, 134);
     --colorLinkActive: black;
+    --popupButtonClosed: rgb(151, 151, 151);
 }
 
 @font-face {
@@ -20,10 +21,18 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: poppins;
+    overflow-x: hidden;
 }
 
-.activePage>a {
-    color: var(--colorLinkHeaderHover)
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -35,6 +44,7 @@ section {
     padding: 7px;
     margin: 3px;
     display: flex;
+    flex-direction: column;
 }
 
 div {
@@ -58,13 +68,12 @@ div {
     align-self: center;
 }
 
-li {
-    list-style: none;
+h1 {
+    margin: 0 0 5px;
 }
 
-main {
-    width: 100%;
-    display: flex;
+li {
+    list-style: none;
 }
 
 hr {
@@ -82,11 +91,232 @@ a {
     text-decoration: none;
 }
 
-p {
-    text-align: justify;
-}
-
 a:hover {
     color: var(--colorLinkHover);
 }
 
+p {
+    text-align: justify;
+    text-indent: 0;
+}
+
+.lienParagraphe {
+    margin-top: auto;
+}
+
+.images {
+    width: 240px;
+    height: 285px;
+}
+
+.imgGauche {
+    flex-wrap: wrap-reverse;
+}
+
+/* - accueil - */
+
+.accueil {
+    min-height: 100vh;
+    background-image: url(Images/accueil.jpg);
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+.titrePortefolio {
+    align-self: center;
+    font-size: 1.2cm;
+    text-align: center;
+}
+
+.accueilSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    flex-wrap: wrap;
+}
+
+.accueilText {
+    border: none;
+    background: none;
+}
+
+.texteAccueil {
+    text-indent: 20px;
+}
+
+/* - projets - */
+
+.titreProjet {
+    text-align: center;
+    width: 80%;
+}
+
+.paragrapheProjet {
+    flex-direction: column;
+    margin: 5px 0 5px 0;
+    width: 100%;
+    backdrop-filter: blur(6px);
+}
+
+.longParagraphe {
+    text-indent: 30px;
+}
+
+/* Css pour les popups */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    backdrop-filter: blur(3px);
+    border: none;
+    scrollbar-width: none;
+    justify-content: center;
+    overflow: scroll;
+    overscroll-behavior: contain;
+    z-index: 999;
+}
+
+.popup .wrapper {
+    box-sizing: border-box;
+    margin: auto;
+    width: 50%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.openPopup {
+    cursor: pointer;
+    width: fit-content;
+    margin-top: auto;
+}
+
+.closePopup {
+    border: none;
+    position: sticky;
+    background: none;
+    cursor: pointer;
+    font-size: 30px;
+    top: 0;
+    left: 97.5%;
+}
+
+.closePopup:active {
+    color: var(--popupButtonClosed);
+}
+
+/* - contact - */
+
+form {
+    box-sizing: border-box;
+    padding: 50px 0 40px 0;
+    background-image: url(Images/accueil.jpg);
+    height: fit-content;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+textarea {
+    resize: none;
+    padding: 7px;
+    border: 1px solid var(--colorBorder);
+}
+
+input {
+    height: 32px;
+    border-radius: 7px;
+    border: 1px solid var(--colorBorder);
+    padding: 7px;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+    width: 25%;
+    height: 468px;
+}
+
+.textForm {
+    padding: 30px;
+    height: 70%;
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactDiv {
+    padding: 7px;
+    width: 40%;
+    height: 450px;
+    min-width: 400px;
+    margin: 0;
+    background-color: var(--colorMainBackground);
+    border-radius: 20px;
+    border: 2px solid var(--colorBorder);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formulaireName {
+    align-self: center;
+    box-sizing: border-box;
+    width: 81%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameInput {
+    width: 35%;
+    margin: 0;
+}
+
+.input1 {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.infoInput {
+    box-sizing: border-box;
+    width: 81%;
+}
+
+.input2 {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.submit {
+    width: 150px;
+    background-color: var(--colorBackgroundElement);
+    color: white;
+}
+
+.objet {
+    width: 100%;
+    height: 66px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
