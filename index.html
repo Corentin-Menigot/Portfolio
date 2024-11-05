@@ -26,10 +26,9 @@
 
             <div class="accueil">
                 <h1 class="titrePortefolio">Portfolio de Corentin Menigot</h1>
-                <div class="imgGauche">
-       
+                <div>
                     <section class="accueilSection">
-                        <img class="images" src="./Images/imageProfil.jpg" alt="photo de profil">
+                        <img class="images photoProfil" src="./Images/imageProfil.jpg" alt="photo de profil">
                         <section class="accueilText">
                             <h1>Mon parcours en quelques mots :</h1>
                             <p class="texteAccueil">Actuellement étudiant en première année de BUT informatique à l'iut2 de Grenoble
@@ -45,79 +44,48 @@
                 </div>
             </div>
 
+            <!-- peojets -->
+
             <h1 id="projets">Mes projets</h1>
 
-            <div>
-                <section class="previewProjet">
-                    <h1>Implémentation d'un besoin client :</h1>
-                    <p>Développement d'un programme optimisé pour classer des dépêches selon différentes catégories.
-                    </p>
-                    <a class="lienParagraphe openPopup" onclick="togglePopup('project1')">En savoir plus sur ce projet →</a>
-                </section>
-                <img class="images" src="./Images/SAE1.012Image.jpg" alt="projet1">
-            </div>
+            <div class="slideshow-container">
+                <div id="slide-1" class="projetPreview mySlides fade">
+                    <img class="images projetImage" onclick="togglePopup('project1')" src="./Images/SAE1.012Image.jpg" alt="projet1">
+                    <h2>Implémentation d'un besoin client</h2>
+                </div>
+                
+                <div id="slide-2" class="projetPreview mySlides fade">
+                    <img class="images projetImage" onclick="togglePopup('project2')" src="./Images/SAE1.03Image.jpg" alt="projet2">
+                    <h2>Installation d'un poste de développement</h2>
+                </div>
+                
+                <div id="slide-3" class="projetPreview mySlides fade">
+                    <img class="images projetImage" onclick="togglePopup('project3')" src="./Images/SAE1.04Image.jpg" alt="projet3">
+                    <h2>Création d'une base de données</h2>
+                </div>
+    
+                <div id="slide-4" class="projetPreview mySlides fade">
+                    <img class="images projetImage" onclick="togglePopup('project4')" src="./Images/SAE1.056Image.jpg" alt="projet4">
+                    <h2>Création du site d'une entreprise</h2>
+                </div>
+    
+                <div id="slide-5" class="projetPreview mySlides fade">
+                    <img class="images projetImage" onclick="togglePopup('project5')" src="./Images/SAE2.04Image.png" alt="projet5">
+                    <h2>Exploitation d'une base de données</h2>
+                </div>
+    
+                <div id="slide-6" class="projetPreview mySlides fade">
+                    <img class="images projetImage" onclick="togglePopup('project6')" src="./Images/MegaSAEImage.jpg" alt="projet6">
+                    <h2>Création d'une application de gestion d'événementns</h2>
+                </div>
+                
+                <!-- Next and previous buttons -->
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+
             
-            <hr>
-            
-            <div class="imgGauche">
-                <img class="images" src="./Images/SAE1.03Image.jpg" alt="projet2">
-                <section class="previewProjet">
-                    <h1>Installation d'un poste de développement :</h1>
-                    <p>Installation d'un environnement de développement sur une machine virtuelle Linux.
-                    </p>
-                    <a class="lienParagraphe openPopup" onclick="togglePopup('project2')">En savoir plus sur ce projet →</a>
-                </section>
-            </div>
-            
-            <hr>
-
-            <!-- peojets -->
-            
-            <div>
-                <section class="previewProjet">
-                    <h1>Création d'une base de données :</h1>
-                    <p>Conception et exploitation d'une base de données afin d'analyser le naufrage du Titanic.
-                    </p>
-                    <a class="lienParagraphe openPopup" onclick="togglePopup('project3')">En savoir plus sur ce projet →</a>
-                </section>
-                <img class="images" src="./Images/SAE1.04Image.jpg" alt="projet3">
-            </div>
-            
-            <hr>
-
-            <div class="imgGauche">
-                <img class="images" src="./Images/SAE1.056Image.jpg" alt="projet4">
-                <section class="previewProjet">
-                    <h1>Création du site d'une entreprise :</h1>
-                    <p>Conception et réalisation en équipe d'un nouveau site pour l'entreprise Atos ayant pour cible des jeunes de troisième.
-                    </p>
-                    <a class="lienParagraphe openPopup" onclick="togglePopup('project4')">En savoir plus sur ce projet →</a>
-                </section>
-            </div>
-
-            <hr>
-
-            <div>
-                <section class="previewProjet">
-                    <h1>Exploitation d'une base de données :</h1>
-                    <p>Tri de la base de données d'Open Food Facts afin de l'analyser pour répondre à une problématique.
-                    </p>
-                    <a class="lienParagraphe openPopup" onclick="togglePopup('project5')">En savoir plus sur ce projet →</a>
-                </section>
-                <img class="images" src="./Images/SAE2.04Image.png" alt="projet5">
-            </div>
-
-            <hr>
-
-            <div class="imgGauche">
-                <img class="images" src="./Images/MegaSAEImage.jpg" alt="projet6">
-                <section class="previewProjet">
-                    <h1>Création d'une application de gestion d'événements :</h1>
-                    <p>Conception et réalisation en équipe d'un nouveau site pour l'entreprise Atos ayant pour cible des jeunes de troisième.
-                    </p>
-                    <a class="lienParagraphe openPopup" onclick="togglePopup('project6')">En savoir plus sur ce projet →</a>
-                </section>
-            </div>
             
             <!-- Popups pour les projets -->
             
@@ -542,17 +510,39 @@
 </html>
 
 <script>
-    /*
-    const dialog = document.getElementById("project")
-    const wrapper = document.querySelector(".wrapper")
 
-    const showDialog = (show) => show ? dialog.showModal() : dialog.close()
-    dialog.addEventListener('click', (e) => !wrapper.contains(e.target) && dialog.close())
-    */
+function togglePopup(popupId) {
+	var popup = document.getElementById(popupId);
+	popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+    document.body.style.overflow = (popup.style.display === 'block') ? 'hidden' : 'auto';
+}
 
-    function togglePopup(popupId) {
-	    var popup = document.getElementById(popupId);
-	    popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
-        document.body.style.overflow = (popup.style.display === 'block') ? 'hidden' : 'auto';
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
 </script>

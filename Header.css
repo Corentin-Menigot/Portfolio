@@ -4,7 +4,7 @@
 }
 
 header {
-    border: 2px solid var(--colorHeader);
+    border: 1px solid var(--colorHeader);
     margin: 10px 5px 10px 5px;
     align-self: center;
     display: flex;
@@ -13,8 +13,8 @@ header {
     display: flex;
     position: fixed;
     border-radius: 10px;
-    top: 10px;
-    left: 10px;
+
+    align-self: center;
     font-size: large;
     background-color: rgba(18, 125, 224, 0.1);
     backdrop-filter: blur(2px);

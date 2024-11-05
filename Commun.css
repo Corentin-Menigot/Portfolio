@@ -1,6 +1,6 @@
 :root {
-    --colorMainBackground: rgba(0, 253, 135, 0.8);
-    --colorBorder: rgb(7, 197, 134);
+    --colorMainBackground: rgba(243, 38, 165, 0.8);
+    --colorBorder: rgb(178, 45, 255);
     --colorLink: rgb(36, 174, 209);
     --colorLinkHover: rgb(14, 96, 134);
     --colorLinkActive: black;
@@ -68,22 +68,29 @@ div {
     align-self: center;
 }
 
+.projetPreview {
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetImage {
+    cursor: pointer;
+    height: 350px;
+    width: 350px;
+}
+
+.photoProfil {
+    height: 300px;
+    width: 300px;
+}
+
 h1 {
     margin: 0 0 5px;
+    align-self: center;
 }
 
 li {
     list-style: none;
-}
-
-hr {
-    border: 1px solid var(--colorBorder);
-    border-radius: 15px;
-    height: 8px;
-    width: 65%;
-    background-color: var(--colorBackgroundElement);
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 a {
@@ -102,15 +109,6 @@ p {
 
 .lienParagraphe {
     margin-top: auto;
-}
-
-.images {
-    width: 240px;
-    height: 285px;
-}
-
-.imgGauche {
-    flex-wrap: wrap-reverse;
 }
 
 /* - accueil - */
@@ -147,6 +145,32 @@ p {
 
 .texteAccueil {
     text-indent: 20px;
+}
+
+/* - slider - */
+
+.mySlides {
+    display: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* - projets - */
