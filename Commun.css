@@ -1,6 +1,6 @@
 :root {
-    --colorMainBackground: rgba(243, 38, 165, 0.8);
-    --colorBorder: rgb(178, 45, 255);
+    --colorMainBackground: rgba(65, 80, 85, 0.8);
+    --colorBorder: rgb(65, 77, 82);
     --colorLink: rgb(36, 174, 209);
     --colorLinkHover: rgb(14, 96, 134);
     --colorLinkActive: black;
@@ -121,24 +121,28 @@ p {
     top: 0;
     left: 0;
     justify-content: center;
-    align-content: space-evenly;
+    align-content: space-between;
 }
 
 .titrePortefolio {
+    margin: 75px 0 0 0;
     align-self: center;
     font-size: 1.2cm;
     text-align: center;
 }
 
 .accueilSection {
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 10px 0 10px;
-    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0 0 20% 0;
+    flex-wrap: nowrap;
 }
 
 .accueilText {
+    width: 60%;
     border: none;
     background: none;
 }
@@ -148,6 +152,10 @@ p {
 }
 
 /* - slider - */
+
+.slideshow-container {
+    padding: 60px 0 40px 0;
+}
 
 .mySlides {
     display: none;
@@ -276,17 +284,22 @@ input {
     align-items: center;
     justify-content: space-between;
     min-width: 300px;
-    width: 25%;
+    width: 40%;
     height: 468px;
+}
+
+.texteDivForm {
+    margin: 0;
 }
 
 .textForm {
     padding: 30px;
-    height: 70%;
+    height: 50%;
     width: 100%;
     text-align: justify;
     display: flex;
     justify-content: space-around;
+    margin: 0 0 10% 0;
 }
 
 .contactDiv {
@@ -310,9 +323,11 @@ input {
     width: 81%;
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 
 .nameInput {
+    justify-content: flex-start;
     width: 35%;
     margin: 0;
 }
@@ -323,8 +338,10 @@ input {
 }
 
 .infoInput {
+    justify-content: flex-start;
     box-sizing: border-box;
     width: 81%;
+    margin: 0;
 }
 
 .input2 {
@@ -334,8 +351,13 @@ input {
 
 .submit {
     width: 150px;
-    background-color: var(--colorBackgroundElement);
-    color: white;
+    background-color: var(--colorBorder);
+}
+
+.submit:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1) inset,
+    -3px -3px 3px rgba(2, 128, 86, 0.2) inset;
+    color: var(--colorLinkHeaderHover);
 }
 
 .objet {
