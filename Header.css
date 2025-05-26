@@ -1,6 +1,6 @@
 :root {
     --colorHeader: var(--colorBorder);
-    --colorLinkHeaderHover: rgb(7, 134, 56);
+    --colorLinkHeaderHover: rgb(22, 68, 113);
 }
 
 header {
@@ -15,7 +15,7 @@ header {
     border-radius: 10px;
     align-self: center;
     font-size: large;
-    background-color: rgba(18, 125, 224, 0.1);
+    background-color: rgba(22, 68, 113, 0.1);
     backdrop-filter: blur(2px);
     z-index: 998;
 }
@@ -48,6 +48,6 @@ header>nav>ul>li {
 
 .buttonHeader:hover {
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1) inset,
-    -7px -7px 7px rgba(2, 128, 86, 0.2) inset;
-    color: var(--colorLinkHeaderHover);
+    -6px -6px 6px rgba(16, 40, 64, 0.2) inset;
+    color: black;
 }
