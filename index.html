@@ -44,40 +44,43 @@
 
             <!-- projets -->
 
+            
+
             <div id="projets" class="slideshow-container">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
                 <div id="slide-1" class="projetPreview mySlides fade">
                     <img class="images projetImage" onclick="togglePopup('project1')" src="./Images/SAE1.012Image.jpg" alt="projet1">
-                    <h2>Implémentation d'un besoin client</h2>
+                    <h2 class="titreProjetPreview">Implémentation d'un besoin client</h2>
                 </div>
                 
                 <div id="slide-2" class="projetPreview mySlides fade">
                     <img class="images projetImage" onclick="togglePopup('project2')" src="./Images/SAE1.03Image.jpg" alt="projet2">
-                    <h2>Installation d'un poste de développement</h2>
+                    <h2 class="titreProjetPreview">Installation d'un poste de développement</h2>
                 </div>
                 
                 <div id="slide-3" class="projetPreview mySlides fade">
                     <img class="images projetImage" onclick="togglePopup('project3')" src="./Images/SAE1.04Image.jpg" alt="projet3">
-                    <h2>Création d'une base de données</h2>
+                    <h2 class="titreProjetPreview">Création d'une base de données</h2>
                 </div>
     
                 <div id="slide-4" class="projetPreview mySlides fade">
                     <img class="images projetImage" onclick="togglePopup('project4')" src="./Images/SAE1.056Image.jpg" alt="projet4">
-                    <h2>Création du site d'une entreprise</h2>
+                    <h2 class="titreProjetPreview">Création du site d'une entreprise</h2>
                 </div>
     
                 <div id="slide-5" class="projetPreview mySlides fade">
                     <img class="images projetImage" onclick="togglePopup('project5')" src="./Images/SAE2.04Image.png" alt="projet5">
-                    <h2>Exploitation d'une base de données</h2>
+                    <h2 class="titreProjetPreview">Exploitation d'une base de données</h2>
                 </div>
     
                 <div id="slide-6" class="projetPreview mySlides fade">
                     <img class="images projetImage" onclick="togglePopup('project6')" src="./Images/MegaSAEImage.jpg" alt="projet6">
-                    <h2>Création d'une application de gestion d'événementns</h2>
+                    <h2 class="titreProjetPreview">Création d'une application de gestion d'événementns</h2>
                 </div>
                 
                 <!-- Next and previous buttons -->
 
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
               </div>
 
@@ -453,7 +456,12 @@
 
             <form id="contact">
                 <div class="divForm">
-                    <h1>Me contacter</h1>
+                    <div class="titreContact">
+ <h1 >Me contacter</h1>
+                    </div>
+                       
+                    
+                    
                     <section class="textForm">
                         <p class="texteDivForm">Un message ? Envoyez le moi via ce formulaire ou par les moyens suivants :
                         </p>
@@ -490,15 +498,12 @@
                     <input type="submit" value="Envoyer" class="submit">
                 </div>
             </form>
-            
-
         </main>
 
         <footer>
             <ul>
                 <li><a href="https://discord.gg/h2FhZdveRt"><img class="icones" src="./Images/discordLogo.jpg" alt="logoDiscord" width="45px" height="45px"></a></li>
                 <li><a href="https://github.com/Corentin-Menigot"><img class="icones" src="./Images/githubLogo.png" alt="logoGithub" width="45px" height="45px"></a></li>
-                <li><a href="https://x.com/SushiLeBg"><img class="icones" src="./Images/XLogo.jpg" alt="logoX" width="45px" height="45px"></a></li>
             </ul>
         </footer>
     </body>
