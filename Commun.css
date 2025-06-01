@@ -77,13 +77,9 @@ div {
 
 .projetImage {
     cursor: pointer;
-    height: 350px;
-    width: 350px;
-}
-
-.photoProfil {
-    height: 300px;
-    width: 300px;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    margin: 0 0 0 0;
 }
 
 h1 {
@@ -114,9 +110,18 @@ p {
 
 /* - accueil - */
 
+
+.content {
+    margin: 90px 0 20px 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .accueil {
-    width: 100%;
-    margin: 0;
+    width: 60%;
+    height: 550px;
+    margin: 0 0 0 0;
     top: 0;
     left: 0;
     justify-content: center;
@@ -124,44 +129,41 @@ p {
 }
 
 .titrePortefolio {
-    margin: 75px 0 0 0;
-    align-self: center;
-    font-size: 1.2cm;
-    text-align: center;
+    margin: 0 0 0 0;
+    font-size: 1.1cm;
 }
 
 .accueilSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 10px;
     margin: 25px 0 0 0;
     flex-wrap: nowrap;
-}
-
-.accueilText {
     width: 100%;
-    border: none;
-    background: none;
+    height: 450px;
 }
 
 .texteAccueil {
     text-indent: 20px;
+    font-size: larger;
 }
 
 /* - slider - */
 
 .slideshow-container {
-    padding: 60px 0 40px 0;
-    width: fit-content;
+    width: 37%;
+    height: 550px;
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    background-color: var(--colorMainBackground);
+    border: 2px solid var(--colorBorder);
+    border-radius: 8px;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
 }
 
 .mySlides {
     display: none;
+    width: 60%;
 }
 
 .prev, .next {
@@ -177,7 +179,8 @@ p {
 }
 
 .titreProjetPreview {
-    max-width: 350px;
+    max-width: 300px;
+    font-size: medium;
     text-align: center;
 }
 
@@ -199,6 +202,37 @@ p {
 
 .longParagraphe {
     text-indent: 30px;
+}
+
+@media (max-width: 1180px) {
+    .content {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .accueil {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .accueilSection {
+        height: fit-content;
+    }
+
+    .slideshow-container {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .mySlides {
+        width: 50%;
+    }
+
+    .titreProjetPreview {
+        width: 100%;
+        max-width: none;
+    }
 }
 
 /* Css pour les popups */
@@ -257,7 +291,7 @@ p {
 form {
     box-sizing: border-box;
     padding: 15px;
-    margin: 0 0 20px 0;
+    margin: 0 0 35px 0;
     width: 90%;
     border-radius: 8px;
     border: 2px solid var(--colorBorder);

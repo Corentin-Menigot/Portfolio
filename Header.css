@@ -1,14 +1,14 @@
 header {
     border: 1px solid var(----colorMainBackground);
     margin: 8px 5px 8px 5px;
-    align-self: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     display: flex;
     position: fixed;
-    border-radius: 10px;
     align-self: center;
+    border-radius: 10px;
+
     font-size: large;
     background-color: rgba(22, 68, 113, 0.1);
     backdrop-filter: blur(2px);
