@@ -456,20 +456,12 @@
 
             <form id="contact">
                 <div class="divForm">
-                    <div class="titreContact">
- <h1 >Me contacter</h1>
-                    </div>
-                       
-                    
-                    
-                    <section class="textForm">
-                        <p class="texteDivForm">Un message ? Envoyez le moi via ce formulaire ou par les moyens suivants :
-                        </p>
-                        <a href="mailto:corentin.menigot@etu-univ-grenoble-alpes.fr">&#9993; corentin.menigot@etu-univ-grenoble-alpes.fr
+
+                        <a href="mailto:corentin.menigot@etu-univ-grenoble-alpes.fr">corentin.menigot@etu-univ-grenoble-alpes.fr
                         </a>
-                        <p class="texteDivForm">&#9742; 07 68 36 23 85
+                        <p class="texteDivForm">07 68 36 23 85
                         </p>
-                </section>
+
                 </div>
                 
                 <div class="contactDiv">
@@ -483,14 +475,17 @@
                             <input type="text" id="first_name" name="first_name" maxlength="25" class="input1" required>
                         </div>
                     </div>
-                    <div class="infoInput">
-                        <label for="mail">Adresse mail :</label>
-                        <input type="email" id="mail" name="mail"  class="input2" required>
+                    <div class="formulaireName">
+                        <div class="nameInput">
+                            <label for="mail">Adresse mail :</label>
+                            <input type="email" id="mail" name="mail"  class="input1" required>
+                        </div>
+                        <div class="nameInput">
+                            <label for="phone_number">Numéro de téléphone :</label>
+                            <input type="tel" id="phone_number" name="phone_number" minlength="10" maxlength="10"  class="input1" required>
+                        </div>
                     </div>
-                    <div class="infoInput">
-                        <label for="phone_number">Numéro de téléphone :</label>
-                        <input type="tel" id="phone_number" name="phone_number" minlength="10" maxlength="10"  class="input2" required>
-                    </div>
+                    
                     <div class="infoInput">
                         <label for="object">Message :</label>
                         <textarea id="object" type="textarea" name="object" class="objet"></textarea>

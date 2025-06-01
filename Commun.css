@@ -258,17 +258,17 @@ form {
     box-sizing: border-box;
     padding: 15px;
     margin: 0 0 20px 0;
-    height: fit-content;
     width: 90%;
     border-radius: 8px;
     border: 2px solid var(--colorBorder);
     justify-content: space-between;
+    gap: 15px;
     align-items: center;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-self: center;
     background-color: var(--colorMainBackground);
+    height: 500px;
 }
 
 textarea {
@@ -288,23 +288,17 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    min-width: 300px;
-    width: 45%;
-    height: 468px;
+    justify-content: space-around;
+    text-align: center;
+    width: 325px;
+    width: clamp(325px, 35%, 500px);
+    height: 100%;
     margin: 0 0 0 0;
-}
-
-.titreContact {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.titreContact h1 {
-    height: fit-content;
-    margin: 0 0 0 0;
+    padding: 30px;
+    background-color: var(--colorMainBackground);
+    border: 2px solid var(--colorBorder);
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 .texteDivForm {
@@ -315,16 +309,17 @@ input {
     padding: 30px;
     height: 60%;
     width: 100%;
-    text-align: justify;
+    text-align: center;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 0 0 0 0;
 }
 
 .contactDiv {
     padding: 7px;
-    width: 45%;
-    height: 450px;
+    height: 100%;
+    box-sizing: border-box;
     min-width: 400px;
     margin: 0;
     background-color: var(--colorMainBackground);
@@ -347,7 +342,8 @@ input {
 
 .nameInput {
     justify-content: flex-start;
-    width: 35%;
+    width: 45%;
+    height: fit-content;
     margin: 0;
 }
 
@@ -360,17 +356,18 @@ input {
     justify-content: flex-start;
     box-sizing: border-box;
     width: 81%;
+    height: 45%;
     margin: 0;
 }
 
-.input2 {
-    box-sizing: border-box;
-    width: 100%;
+.infoInput label {
+    height: fit-content;
 }
 
 .submit {
     width: 150px;
     background-color: var(--colorMainBackground);
+    border: 2px solid var(--colorBorder);
 }
 
 .submit:hover {
@@ -381,7 +378,25 @@ input {
 
 .objet {
     width: 100%;
-    height: 66px;
+    height: 85%;
     border-radius: 10px;
     box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+    form {
+        flex-direction: column-reverse;
+        height: 700px;
+    }
+
+    .divForm {
+        width: 100%;
+        flex-direction: row;
+        height: fit-content;
+    }
+
+    .contactDiv {
+        width: 100%;
+        height: 600px;
+    }
 }
