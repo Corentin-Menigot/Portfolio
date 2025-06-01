@@ -179,7 +179,7 @@ p {
 }
 
 .titreProjetPreview {
-    max-width: 300px;
+    max-width: 100%;
     font-size: medium;
     text-align: center;
 }
@@ -227,11 +227,6 @@ p {
 
     .mySlides {
         width: 50%;
-    }
-
-    .titreProjetPreview {
-        width: 100%;
-        max-width: none;
     }
 }
 
