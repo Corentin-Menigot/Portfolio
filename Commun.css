@@ -34,6 +34,8 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 section {
@@ -111,7 +113,7 @@ p {
 
 
 .content {
-    margin: 90px 0 20px 0;
+    margin: 90px 0 0 0;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -194,9 +196,18 @@ p {
 
 .paragrapheProjet {
     flex-direction: column;
+    padding: 15px;
     margin: 5px 0 5px 0;
     width: 100%;
     backdrop-filter: blur(6px);
+}
+
+.paragrapheProjet p {
+    margin: 0 0 0 0;
+}
+
+.paragrapheProjet h3 {
+    color: rgb(190, 186, 186);
 }
 
 .longParagraphe {
@@ -232,28 +243,22 @@ p {
 /* Css pour les popups */
 
 .popup {
+    margin: 0 0 0 0;
+    padding: 15px 15px 15px 15px;
+    box-sizing: border-box;
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background: none;
-    backdrop-filter: blur(3px);
     border: none;
-    scrollbar-width: none;
     justify-content: center;
-    overflow: scroll;
-    overscroll-behavior: contain;
-    z-index: 999;
+    border: 2px solid var(--colorBorder);
+    border-radius: 8px;
+    background-color: var(--colorMainBackground);
+    width: 90%;
 }
 
 .popup .wrapper {
     box-sizing: border-box;
     margin: auto;
-    width: 50%;
+    width: 100%;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
@@ -264,16 +269,6 @@ p {
     cursor: pointer;
     width: fit-content;
     margin-top: auto;
-}
-
-.closePopup {
-    border: none;
-    position: sticky;
-    background: none;
-    cursor: pointer;
-    font-size: 30px;
-    top: 0;
-    left: 97.5%;
 }
 
 .closePopup:active {

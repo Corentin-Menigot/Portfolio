@@ -41,10 +41,9 @@
 
             </div>
 
-            <!-- projets -->
+            <!-- projets slider -->
 
             
-
             <div id="projets" class="slideshow-container">
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 
@@ -82,12 +81,12 @@
 
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
               </div>
-
+            </div>
             
             <!-- Popups pour les projets -->
-            
-            <dialog class="popup" id="project1">
-                <button class="closePopup" onclick="togglePopup('project1')" type="button">×</button>
+
+            <div class="popup" id="project1">
+                
                 <div class="wrapper">
                     <h1 class="titreProjet">Implémentation d'un besoin client</h1>
                     <section class="paragrapheProjet">
@@ -136,10 +135,9 @@
                         </p>
                     </section>
                 </div>
-            </dialog>
+            </div>
 
-            <dialog class="popup" id="project2">
-                <button class="closePopup" onclick="togglePopup('project2')" type="button">×</button>
+            <div class="popup" id="project2">
                 <div class="wrapper">
                     <h1 class="titreProjet">Installation d'un poste de développement</h1>
                     <section class="paragrapheProjet">
@@ -179,10 +177,9 @@
                         </p>
                     </section>
                 </div>
-            </dialog>
+            </div>
 
-            <dialog class="popup" id="project3">
-                <button class="closePopup" onclick="togglePopup('project3')" type="button">×</button>
+            <div class="popup" id="project3">
                 <div class="wrapper">
                     <h1 class="titreProjet">Création d'une base de données</h1>
                     <section class="paragrapheProjet">
@@ -240,10 +237,9 @@
                         </p>
                     </section>
                 </div>
-            </dialog>
+            </div>
 
-            <dialog class="popup" id="project4">
-                <button class="closePopup" onclick="togglePopup('project4')" type="button">×</button>
+            <div class="popup" id="project4">
                 <div class="wrapper">
                     <h1 class="titreProjet">Création du site d'une entreprise</h1>
                     <section class="paragrapheProjet">
@@ -313,10 +309,9 @@
                         </p>
                     </section>
                 </div>
-            </dialog>
+            </div>
 
-            <dialog class="popup" id="project5">
-                <button class="closePopup" onclick="togglePopup('project5')" type="button">×</button>
+            <div class="popup" id="project5">
                 <div class="wrapper">
                     <h1 class="titreProjet">Exploitation d'une base de données</h1>
                     <section class="paragrapheProjet">
@@ -376,10 +371,9 @@
                         </p>
                     </section>
                 </div>
-            </dialog>
+            </div>
 
-            <dialog class="popup" id="project6">
-                <button class="closePopup" onclick="togglePopup('project6')" type="button">×</button>
+            <div class="popup" id="project6">
                 <div class="wrapper">
                     <h1 class="titreProjet">Création d'une application de gestion d'événementns</h1>
                     <section class="paragrapheProjet">
@@ -449,9 +443,7 @@
                         </p>
                     </section>
                 </div>
-            </dialog>
             </div>
-            
 
             <!-- contact -->
 
@@ -508,8 +500,17 @@
 <script>
 
 function togglePopup(popupId) {
+    // fermeture des popups
+    let popups = document.getElementsByClassName("popup");
+    for (i = 0; i < popups.length; i++) {
+        if (popups[i].id != popupId) {
+            popups[i].style.display = "none";
+        }
+    }
+
+    // ouverture de la popup
 	var popup = document.getElementById(popupId);
-	popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+	popup.style.display = (popup.style.display === 'flex') ? 'none' : 'flex';
     document.body.style.overflow = (popup.style.display === 'block') ? 'hidden' : 'auto';
 }
 
