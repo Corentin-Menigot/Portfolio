@@ -40,7 +40,6 @@ section {
     background-color: var(--colorMainBackground);
     border-radius: 8px;
     border: 2px solid var(--colorBorder);
-    width: 90%;
     box-sizing: border-box;
     padding: 7px;
     margin: 3px;
@@ -149,7 +148,7 @@ p {
 /* - slider - */
 
 .slideshow-container {
-    width: 37%;
+    width: 38%;
     height: 550px;
     display: flex;
     flex-direction: row;
@@ -319,7 +318,6 @@ input {
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    width: 325px;
     width: clamp(325px, 35%, 500px);
     height: 100%;
     margin: 0 0 0 0;
@@ -348,6 +346,7 @@ input {
 .contactDiv {
     padding: 7px;
     height: 100%;
+    width: 90%;
     box-sizing: border-box;
     min-width: 400px;
     margin: 0;
