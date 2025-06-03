@@ -253,6 +253,13 @@ p {
     border-radius: 8px;
     background-color: var(--colorMainBackground);
     width: 90%;
+    animation: open 0.6s ease forwards;
+    transform-origin: top;
+}
+
+@keyframes open {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
 }
 
 .popup .wrapper {
