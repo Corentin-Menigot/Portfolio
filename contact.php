@@ -17,6 +17,6 @@
         // envoi du mail
         mail($mailTo, "message du portfolio", $message, $from);
     
-    header("Location: https://www.menigot.fr/portfolio/index.html");
+    header("Location: https://www.menigot.fr/portfolioCorentin/index.html");
     exit();
 ?>
