@@ -1,5 +1,6 @@
 <?php
-    if(isset($_POST['submit'])) {
+
+
         // récupération des paramétres
         $mailTo = "corentin@menigot.fr";
         $nom = $_POST['name'];
@@ -11,12 +12,11 @@
         // construction du corp de texte
         $message = $texte;
 
-        $from = "De : " . $mailFrom;
+        $from = "From: " . $mailFrom . "\r\n";
 
         // envoi du mail
         mail($mailTo, "message du portfolio", $message, $from);
-
-        // prévenir l'utilisateur que le message est bien envoyé
-        echo "Message envoyé, je reviens vers vous dans les plus brefs délais";
-    }
+    
+    header("Location: https://www.menigot.fr/portfolio/index.html");
+    exit();
 ?>
