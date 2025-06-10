@@ -8,7 +8,6 @@ header {
     position: fixed;
     align-self: center;
     border-radius: 10px;
-
     font-size: large;
     background-color: rgba(22, 68, 113, 0.1);
     backdrop-filter: blur(2px);
@@ -39,10 +38,12 @@ header>nav>ul>li {
     border-radius: 10px;
     color: white;
     backdrop-filter: blur(25px);
+    transition: 0.2s ease;
 }
 
 .buttonHeader:hover {
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1) inset,
     -6px -6px 6px var(--colorBoxShadow) inset;
     color: white;
+    transform: scale(1.03);
 }

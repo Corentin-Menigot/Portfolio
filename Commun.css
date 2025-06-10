@@ -414,12 +414,15 @@ input {
     width: 150px;
     background-color: var(--colorMainBackground);
     border: 2px solid var(--colorBorder);
+    color: white;
+    transition: 0.2s ease;
 }
 
 .submit:hover {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1) inset,
     -3px -3px 3px var(--colorBoxShadow) inset;
-    color: black;
+    transform: scale(1.04);
+    color: var(--colorLinkHover);
 }
 
 .objet {
