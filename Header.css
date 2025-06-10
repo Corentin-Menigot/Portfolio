@@ -37,12 +37,12 @@ header>nav>ul>li {
     width: 180px;
     padding: 7px;
     border-radius: 10px;
-    color: black;
+    color: white;
     backdrop-filter: blur(25px);
 }
 
 .buttonHeader:hover {
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1) inset,
     -6px -6px 6px var(--colorBoxShadow) inset;
-    color: black;
+    color: white;
 }
