@@ -1,6 +1,4 @@
 <?php
-
-
         // récupération des paramétres
         $mailTo = "corentin@menigot.fr";
         $nom = $_POST['name'];
@@ -10,7 +8,9 @@
         $texte = $_POST['object'];
         
         // construction du corp de texte
-        $message = $texte;
+        $message = "Message : " . $texte . "\n";
+        $message = $message . "De : " . $prenom . " " . $nom . "\n";
+        $message = $message . "Tél : " . $telephone . "\n";
 
         $from = "From: " . $mailFrom . "\r\n";
 
