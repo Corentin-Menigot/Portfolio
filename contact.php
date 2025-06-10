@@ -8,9 +8,10 @@
         $texte = $_POST['object'];
         
         // construction du corp de texte
-        $message = "Message : " . $texte . "\n";
-        $message = $message . "De : " . $prenom . " " . $nom . "\n";
-        $message = $message . "Tél : " . $telephone . "\n";
+        $message = "De : " . $prenom . " " . $nom . "\n";
+        $message = $message . "Tél : " . $telephone . "\n\n";
+        $message = $message . "Message : " . $texte . "\n";
+       
 
         $from = "From: " . $mailFrom . "\r\n";
 
